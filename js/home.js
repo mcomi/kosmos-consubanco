@@ -1,24 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
 
-    Typed.new("#typed", {
-        stringsElement: document.getElementById('typed-strings'),
-        typeSpeed: 40,
-        backDelay: 500,
-        loop: true,
-        contentType: 'html', // or text
-        // defaults to null for infinite loop
-        loopCount: null,
-        resetCallback: function() { newTyped(); }
-    });
-
-    var resetElement = document.querySelector('.reset');
-    if(resetElement) {
-        resetElement.addEventListener('click', function() {
-            document.getElementById('typed')._typed.reset();
-        });
-    }
-
-});
 
 function newTyped(){ /* A new typed object */ }
 $("input[name='tipo-credito']").click(function(){
@@ -39,9 +19,7 @@ menuLinks.each(function(index) {
 
 });
 
-$('#btn-solicita-credito-fixed').click(function(){
-  $('html, body').animate({ scrollTop: $('#cotizador').offset().top }, 'slow');
-})
+
 
 let regex = /^\(?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
 let celular = new Cleave('#celular', {
