@@ -154,6 +154,10 @@ h5.status {
   font-size: 20px;
   color: #153587; }
 
+.steps-title-status {
+  font-size: 2.5em;
+  color: #153587; }
+
 .navbar {
   background: #06164E;
   border: 1px solid #06164E;
@@ -987,6 +991,8 @@ td a {
     display: block; }
     .progress-indicator > li:hover {
       color: #6f6f6f; }
+  .progress-indicator > li .text {
+    display: none; }
   .progress-indicator > li .bubble {
     border-radius: 1000px;
     width: 20px;
@@ -1499,6 +1505,10 @@ body {
   .only-mobile {
     display: none; }
   .only-desktop {
-    display: block; } }
+    display: block; }
+  .progress-indicator li .text {
+    display: block; }
+  .steps-title-status {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
