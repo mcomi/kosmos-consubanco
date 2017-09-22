@@ -102,7 +102,7 @@ const validateInputs = function (inputs) {
 
 /** Formulario Solicitud **/
 // agrego evento para manejar la clase valid de cada input y poner su valor debajo
-const inputsSolicitud = $('#formDatosPersonales input')
+const inputsSolicitud = $('input')
 inputsSolicitud.each(function() {
   let input = $(this)
   input.change(function() {

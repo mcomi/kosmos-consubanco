@@ -22,12 +22,12 @@ menuLinks.each(function(index) {
 
 
 let regex = /^\(?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
-let celular = new Cleave('#celular', {
+let celularInput = new Cleave('#celular', {
   phone: true,
   phoneRegionCode: 'MX'
 });
 
-let celularCheck = new Cleave('#celular-check', {
+let celularCheckInput = new Cleave('#celular-check', {
   phone: true,
   phoneRegionCode: 'MX'
 });
