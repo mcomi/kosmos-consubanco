@@ -6,7 +6,7 @@
 	<meta name="description" content="bx+ using webpack and bootstrap">
 	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
 
-	<title>Consubanco - Revisando datos</title>
+	<title>Consubanco - Carga contratos</title>
 
 	<!-- Disable tap highlight on IE -->
 	<meta name="msapplication-tap-highlight" content="no">
@@ -136,8 +136,8 @@
 				<div class="center col-xs-12 col-md-10 col-md-offset-1">
 					<ul class="progress-indicator">
 					  <li class="completed"><span class="bubble"></span> <span class="text">Confirmación y opciones de crédito</span> </li>
-					  <li> <span class="bubble"></span> <span class="text">Datos complementarios</span> </li>
-					  <li> <span class="bubble"></span> <span class="text">Firma y carga de contratos</span> </li>
+					  <li class="completed"> <span class="bubble"></span> <span class="text">Datos complementarios</span> </li>
+					  <li class="completed"> <span class="bubble"></span> <span class="text">Firma y carga de contratos</span> </li>
 					  <li> <span class="bubble"></span> <span class="text">Envía contratos y recibe tu dinero</span> </li>
 					</ul>
 
@@ -149,20 +149,50 @@
 		<section class="container">
 			<div class="row center">
 				<div class="col-xs-12">
-					<h3 class="steps-title-status">Confirmación y opciones de crédito</h3>
-					<div class="col-md-8 col-md-offset-2 center">
-							<img src="img/sad.svg" class="img-center" alt="">
+					<h3 class="steps-title-status">Descarga, firma y envía tus contratos</h3>
+					<div class="col-md-8 col-md-offset-2">
 							<div class="lead">
-								<p class="lead-status">Lo sentimos</p>
-								<span>No es posible otorgarte un crédito </span>
+								<p class="title-status">Descarga, firma y envía tus contratos</p>
 							</div>
 					</div>
-
-
-					<!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
 				</div>
+			</div>
 
+			<div class="row">
+				<div class="col-md-6 col-xs-12 center">
+					<div class="panel panel-border section-panel col-xs-8 col-xs-offset-2 col-md-5 col-md-offset-4 contratos">
+						<div id="panel-webcam" class="panel-body">
+							<img src="img/icons/download.svg" alt="" class="img-responsive">
+							<p>Ver guía de firmas y descargar contratos</p>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						Recuerda firmar los contratos en el lugar asignado para tu firma,
+						como se muestra en la animación, de lo contrario se atrasara tu tramite
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 center">
+					<div class="panel panel-border section-panel col-xs-4 col-xs-offset-4 col-md-5 col-md-offset-3 contratos">
+						<div id="panel-webcam" class="panel-body center">
+							<img src="img/icons/upload.svg" alt="" class="img-responsive">
+							<p>Carga contratos firmados</p>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						Guarda muy bien tus contratos firmados, ya que una vez validados
+						tendras que enviarlos para recibir tu dinero
+					</div>
+				</div>
+			</div>
 
+			<div class="row padding-top">
+				<div class="col-xs-12 center">
+
+					<a href="" class="btn-link"><i class="fa fa-video-camera"></i> Ver guía de firma nuevamente</a>
+				</div>
+				<div class="col-xs-12 center padding-top">
+					<a href="" class="btn btn-form">Enviar</a>
+				</div>
 			</div>
 		</section>
 

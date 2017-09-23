@@ -146,7 +146,7 @@ h5.status {
 .lead {
   padding: 60px 0; }
 
-.lead .title-status {
+.lead .title-status, .lead .lead-status {
   font-size: 3.4em;
   color: #0F2765; }
 
@@ -176,6 +176,9 @@ h6 {
 
 h2 {
   color: #0865CA; }
+
+.title-status {
+  display: none; }
 
 .navbar {
   background: #06164E;
@@ -712,7 +715,8 @@ a:hover .doc-info {
   border-radius: 16px; }
 
 .panel.section-panel img {
-  padding: 15px 0; }
+  padding: 15px 0;
+  margin: 0 auto; }
 
 span.mobile-only {
   font-size: 20px;
@@ -831,6 +835,13 @@ a[aria-expanded="false"] + span {
 
 .only-desktop {
   display: none; }
+
+.contratos {
+  min-height: 162px; }
+
+.icon-contratos img {
+  height: 100px !important;
+  min-height: 160px !important; }
 
 .swiper-container {
   width: 100%;
@@ -1347,6 +1358,33 @@ body {
   background-position: right;
   background-size: 400px; }
 
+#map {
+  width: 100%;
+  height: 400px; }
+
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); }
+
+#searchInput {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 50%; }
+
+#searchInput:focus {
+  border-color: #4d90fe; }
+
 /* importamos responsive al final */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 801px) {
@@ -1599,6 +1637,8 @@ body {
   .table.ofertas-table > tbody > tr > td {
     padding-left: 0; }
   .table.ofertas-table > thead > tr > th.title-ofertas {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .title-status {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
