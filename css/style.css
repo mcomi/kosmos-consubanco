@@ -843,6 +843,9 @@ a[aria-expanded="false"] + span {
   height: 100px !important;
   min-height: 160px !important; }
 
+#frente-reverso label {
+  display: block; }
+
 .swiper-container {
   width: 100%;
   margin: 20px auto;

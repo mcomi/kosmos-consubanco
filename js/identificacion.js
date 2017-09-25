@@ -1,4 +1,6 @@
 const panelActiveWebcam = $('#panel-webcam')
+const panelesAnexaId = $('.anexa-identificacion')
+
 panelActiveWebcam.click(function(){
   $('#webcam').removeClass('hidden')
   $('#optionsIdPhoto').addClass('hidden')
@@ -24,6 +26,24 @@ panelActiveWebcam.click(function(){
   	context.drawImage(video, 0, 0, 480, 320);
     // canvas.toDataURL() para guardar foto
   });
+})
+
+panelesAnexaId.each(function(){
+  var panel = $(this)
+  panel.click(function(){
+    $('#frente-reverso').removeClass('hidden')
+    $('#optionsIdPhoto').addClass('hidden')
+
+  })
+})
+
+$('input[type=file]').change(function() {
+
+  $('#loader-id').removeClass('hidden') // si pasa se muestra loader
+
+  setTimeout(function() {
+    $('#loader-id').addClass('hidden')
+  }, 3000)
 })
 
 const saveImageBtn = $('#savePhotoWebcam')

@@ -208,9 +208,7 @@
 										<h4 class="center">Webcam</h4>
 									</div>
 									<div class="col-xs-12 col-md-6 only-mobile">
-										<input type="file" class="input-file" name="smarthphone" id="smarthphone" accept="image/*;capture=camera">
-										<label for="smarthphone">
-											<div class="panel panel-border section-panel">
+											<div class="panel panel-border section-panel anexa-identificacion">
 
 												<div class="panel-body">
 													<img src="img/icons/mobile-app.svg" alt="" class="img-responsive">
@@ -220,9 +218,8 @@
 										<h4 class="center">Smarthphone</h4>
 									</div>
 									<div class="col-xs-12 col-md-6 only-desktop">
-										<input type="file" class="input-file" name="computer" id="computer">
-										<label for="computer">
-											<div class="panel panel-border section-panel">
+
+											<div class="panel panel-border section-panel anexa-identificacion">
 
 												<div class="panel-body">
 													<img src="img/icons/computer.svg" alt="" class="img-responsive">
@@ -233,21 +230,7 @@
 									</div>
 								</div>
 
-								<div class="col-xs-12 center" style="padding: 20px 0;">
-									<div id="loader-files" class="row hidden">
-										<div class="sk-folding-cube">
-											<div class="sk-cube1 sk-cube"></div>
-											<div class="sk-cube2 sk-cube"></div>
-											<div class="sk-cube4 sk-cube"></div>
-											<div class="sk-cube3 sk-cube"></div>
 
-										</div>
-										<div class="center">
-											<span>Revisando el archivo cargado</span>
-										</div>
-									</div>
-
-								</div>
 
 								<div class="col-xs-12 center" style="padding: 20px 0;">
 									La foto debe ser legible sin tachaduras ni difusion de cámara
@@ -275,6 +258,53 @@
 								<div class="col-xs-12 col-md-6">
 									<canvas id="canvas" width="480" height="320"></canvas>
 									<button id="savePhotoWebcam" class="btn btn-form" id="snap">Guardar foto</button>
+								</div>
+							</div>
+
+							<div id="frente-reverso" class="row hidden">
+								<div class="col-xs-12 center" style="padding: 20px 0;">
+									<div id="loader-id" class="row hidden">
+										<div class="sk-folding-cube">
+											<div class="sk-cube1 sk-cube"></div>
+											<div class="sk-cube2 sk-cube"></div>
+											<div class="sk-cube4 sk-cube"></div>
+											<div class="sk-cube3 sk-cube"></div>
+
+										</div>
+										<div class="center">
+											<span>Revisando el archivo cargado</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="col-xs-12 col-md-8 col-md-offset-2">
+
+									<div class="col-xs-12 col-md-6">
+										<input type="file" class="input-file" name="frente" id="frente" accept="image/*;capture=camera">
+										<label for="frente">
+											<div class="panel panel-border section-panel">
+
+												<div class="panel-body">
+													<img src="img/icons/front-id.svg" alt="" class="img-responsive">
+
+												</div>
+											</div>
+										</label>
+										<h4 class="center">Captura o anexa el frente de tu Identificación</h4>
+									</div>
+									<div class="col-xs-12 col-md-6">
+										<input type="file" class="input-file" name="reverso" id="reverso" accept="image/*;capture=camera">
+										<label for="reverso">
+											<div class="panel panel-border section-panel">
+
+												<div class="panel-body">
+													<img src="img/icons/back-id.svg" alt="" class="img-responsive">
+
+												</div>
+											</div>
+										</label>
+										<h4 class="center">Captura o anexa el reverso de tu Identificación</h4>
+									</div>
 								</div>
 							</div>
 			      </div>
